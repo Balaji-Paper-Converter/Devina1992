@@ -11,6 +11,12 @@
         h=u.getElementsByTagName('script')[0];
         h.parentNode.insertBefore(s,h);
     })(window,document);
+    window._pcq = window._pcq || []; 
+_pcq.push(['subscriptionSuccessCallback',callbackFunctionOnSuccessfulSubscription]); //registers callback function to be called when user gets successfully subscribed 
+
+function callbackFunctionOnSuccessfulSubscription() { 
+window.location= 'https://www.example.com'; //here, you can give URL where do you want your subscribers to be re-directed
+} 
 </script>
   </head>
 <body>
